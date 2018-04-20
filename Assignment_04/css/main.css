@@ -96,6 +96,116 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*cool styles for checkboxes ,radio button and dropdowns*/
+ /* Base for label styling */
+ /* Base for label styling */
+ [type="checkbox"]:not(:checked),
+ [type="checkbox"]:checked {
+     position: absolute;
+     left: -9999px;
+ }
+ [type="checkbox"]:not(:checked) + label,
+ [type="checkbox"]:checked + label {
+     position: relative;
+     padding-left: 35px;
+     cursor: pointer;
+     margin-bottom: 4px;
+     display: inline-block;
+     font-size: 16px;
+ }
+ /* checkbox aspect */
+ [type="checkbox"]:not(:checked) + label:before,
+ [type="checkbox"]:checked + label:before {
+     content: '';
+     position: absolute;
+     left: 0px; top: 0px;
+     width: 22px; height: 22px;
+     border: 1px double #cccccc;
+     background: #ffffff;
+     border-radius: 0px;
+     box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+ }
+ /* checked mark aspect */
+ [type="checkbox"]:not(:checked) + label:after,
+ [type="checkbox"]:checked + label:after {
+     content: '✔';
+     position: absolute;
+     top: 0px; left: 5px;
+     font-size: 20px;
+     line-height: 1.2;
+     color: #6cc1a8;
+     transition: all .2s;
+ }
+ /* checked mark aspect changes */
+ [type="checkbox"]:not(:checked) + label:after {
+     opacity: 0;
+     transform: scale(0);
+ }
+ [type="checkbox"]:checked + label:after {
+     opacity: 1;
+     transform: scale(1);
+ }
+ /* disabled checkbox */
+ [type="checkbox"]:disabled:not(:checked) + label:before,
+ [type="checkbox"]:disabled:checked + label:before {
+     box-shadow: none;
+     border-color: #999999;
+     background-color: #dddddd;
+ }
+ [type="checkbox"]:disabled:checked + label:after {
+     color: #999999;
+ }
+ [type="checkbox"]:disabled + label {
+     color: #aaaaaa;
+ }
+ /* accessibility */
+ [type="checkbox"]:checked:focus + label:before,
+ [type="checkbox"]:not(:checked):focus + label:before {
+     border: 2px dotted #b5b5bc;
+ }
+ /* hover style just for information */
+ label:hover:before {
+     border: 2px solid #adb7cb!important;
+     background: #ffffff}
+
+
+/*radio button*/
+input[type=radio].css-checkbox {
+                            position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+                        }
+
+                        input[type=radio].css-checkbox + label.css-label {
+                            padding-left:37px;
+                            height:28px; 
+                            display:inline-block;
+                            line-height:28px;
+                            background-repeat:no-repeat;
+                            background-position: 0 0;
+                            font-size:14px;
+                            vertical-align:middle;
+                            cursor:pointer;
+
+                        }
+
+                        input[type=radio].css-checkbox:checked + label.css-label {
+                            background-position: 0 -28px;
+                        }
+                        label.css-label {
+                background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_6cb0b5404e7740c3ceffc8b5b339a205.png);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+
+/*dropdown arrow*/
+
+
+
+
 
 html
 {

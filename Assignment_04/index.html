@@ -43,7 +43,7 @@
             <img class="large-head-pic" src="img/lookbook-header-lg.jpg" alt="high-rise-buildings-downtown">       
         </header>
         <main>
-            <form class="container clearfix" method="post"> 
+            <form class="container clearfix" method="post" action="#"> 
                 <h2>Register</h2>
                 <div class="col-md-6 col-4">
                     <div class="col-md-3 col-4">
@@ -89,9 +89,10 @@
                         <input type="tel" name="phoneNumber" id="phoneNumber" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                     </div>    
                 </div>
-                <div class="col-md-6 col-4">
-                    <input type="radio" name="termsAggrement" id="termsAggrement" required autofocus>
-                    <label for="termsAggrement">I agree to the terms and the conditions of the website. I may opt out at anytime.</label>
+                <div class="col-md-6 col-4 " >
+                    <input type="radio" name="termsAggrement" id="termsAggrement" required autofocus class="css-checkbox">
+                    <label for="termsAggrement" class="css-label">I agree to the terms and the conditions of the website. I may opt out at anytime.</label>
+
                 </div>
                 <div class="col-md-6 col-4">
                     <label for="message">Send us a message (optional)</label>
@@ -100,33 +101,33 @@
                 <div class="col-md-6 ">
                     <h3>Sign up for</h3>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="exclusiveUpdate" value="exclusiveUpdate" >
+                        <input type="checkbox" name="exclusiveUpdate" value="exclusiveUpdate" id="exclusiveUpdate">
                         <label for="exclusiveUpdate">exclusive update</label>
                     </div>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="discountSales" value="discountSales">
+                        <input type="checkbox" name="discountSales" value="discountSales" id="discountSales">
                         <label for="discountSales">discount/sales</label>
                     </div>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="newArrivals" value="newArrivals">
+                        <input  type="checkbox" name="newArrivals" value="newArrivals" id="newArrivals">
                         <label for="newArrivals">new arrivals</label>
                     </div>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="contests" value="contests">
+                        <input type="checkbox" name="contests" value="contests" id="contests">
                         <label for="contests">contests</label>
                     </div>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="everything" value="everything">
+                        <input type="checkbox" name="everything" value="everything" id="everything">
                         <label for="everything">everything</label>
                     </div>
                     <div class="col-md-2 col-4">
-                        <input type="checkbox" name="coupons" value="coupons">
+                        <input type="checkbox" name="coupons" value="coupons" id="coupons">
                         <label for="coupons">coupons</label>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h3>Preferences (optional)</h3>
-                    <div class="col-md-3 col-4">
+                    <div class="col-md-3 col-4 ">
                         <label for="language">Language</label>
                         <select id="language" name="language">
                             <option value="english">English</option>
