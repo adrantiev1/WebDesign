@@ -271,8 +271,6 @@ body
 }
 label
 {
-    /*beacouse its inline element*/
-    display: inline;
     margin-top: 10px;
 }
 label,option,.needHelp h3, .needHelp p
@@ -292,19 +290,15 @@ main h2
 {
     text-transform: uppercase;
 }
-#termsAggrement
+#termsAggrement,input[type="checkbox"],label,option,.needHelp h3, .needHelp p
 {
+    display: inline;
     width: auto;
 }
+
 textarea
 {
     height: 100px;
-}
-input[type="checkbox"]
-{
-    width: auto;
-    display: inline;
-
 }
 input:required
 {
@@ -339,12 +333,14 @@ input[type="submit"]
     color: #000;
     background-color: #fff;
     cursor: pointer;
+    margin-top: 10px;
 }
 input[type="submit"]:hover
 {
     background-color: #00c8c8;
     color: #fff;
     border: transparent;
+
 }
 .privacy a
 {
@@ -353,9 +349,13 @@ input[type="submit"]:hover
 }
 .privacy
 {
+    padding-left: 20%;
     text-align: right;
 }
-
+input,select, textarea
+{
+    padding: 8px;
+}
 
 /*footer*/
 
@@ -501,8 +501,6 @@ input[type="submit"]:hover
     main .container
     {
         padding: 0 15.5%;
-        
-
     }
     form [class*="col-"]
     {
@@ -512,88 +510,16 @@ input[type="submit"]:hover
     {
         display: block;
         width: 100%;
-        padding: 8px;
     }
-    label,option,.needHelp h3, .needHelp p
-    {
-        display: inline;
-/*        font-size: 0.8em;
-        color: #727272;*/
-    }
-/*    main h3, main h2
-    {
-        color: #555;
-    }
-    main h2
-    {
-        text-transform: uppercase;
-    }*/
 
-    #termsAggrement
-    {
-        display: inline;
-        /*width: auto;*/
-    }
     textarea
     {
         height: 150px;
     }
     input[type="checkbox"]
     {
-/*        width: auto;*/
         display: inline;
-
     }
-/*    input:required
-    {
-        border-bottom: 2px solid #ddd;
-    }
-    input:focus
-    {
-        background-color: #eee;
-    }
-    input:focus:invalid
-    {
-        outline-color: #ccc;
-    }
-
-    .needHelp span,.needHelp h3
-    {
-        color: #00c8c8;
-    }
-    .needHelp span:first-child
-    {
-        font-weight: 500;
-    }
-    .needHelp h3
-    {
-        text-transform: uppercase;
-    }*/
-/*    input[type="submit"]
-    {
-        text-decoration: none;
-        padding: 15px 0;
-        border:2px solid #000; 
-        color: #000;
-        background-color: #fff;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover
-    {
-        background-color: #00c8c8;
-        color: #fff;
-        border: transparent;
-    }
-    .privacy a
-    {
-        text-decoration: none;
-        color: #00c8c8;
-    }
-    .privacy
-    {
-        text-align: right;
-    }
-*/
 
 
    
